@@ -1,7 +1,11 @@
-﻿namespace RebecaBarrezueta_Examen1P.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace RebecaBarrezueta_Examen1P.Models
 {
     public class PromocionRB
     {
+
+        [Key]
         public int PromocionID_RB { get; set; }
         public string? Descripcion_RB { get; set; }
         public DateTime FechaPromo_RB { get; set; }

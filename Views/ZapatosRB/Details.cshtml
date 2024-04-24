@@ -1,0 +1,36 @@
+﻿@model RebecaBarrezueta_Examen1P.Models.ZapatosRB
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>ZapatosRB</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Nombre_RB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Nombre_RB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EdicionEspecial_RB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EdicionEspecial_RB)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Precio_RB)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Precio_RB)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.ZapatosID_RB">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

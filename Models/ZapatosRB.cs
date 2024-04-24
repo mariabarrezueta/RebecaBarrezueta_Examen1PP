@@ -4,6 +4,7 @@ namespace RebecaBarrezueta_Examen1P.Models
 {
     public class ZapatosRB
     {
+        [Key]
         public int ZapatosID_RB { get; set; }
 
         [Required]
