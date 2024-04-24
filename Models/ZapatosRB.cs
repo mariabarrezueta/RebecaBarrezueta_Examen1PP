@@ -10,7 +10,7 @@ namespace RebecaBarrezueta_Examen1P.Models
 
         [Required]
         [StringLength(100, MinimumLength = 3)]
-        public string Nombre_RB { get; set; }
+        public string? Nombre_RB { get; set; }
         
         [DefaultValue(false)]
         public bool EdicionEspecial_RB { get; set; }

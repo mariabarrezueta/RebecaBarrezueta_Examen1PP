@@ -46,6 +46,7 @@ namespace RebecaBarrezueta_Examen1P.Controllers
         // GET: PromocionRB/Create
         public IActionResult Create()
         {
+            ViewData["ZapatosID_RB"] = new SelectList(_context.ZapatosRB, "ZapatosID_RB", "Nombre_RB");
             return View();
         }
 
@@ -62,6 +63,7 @@ namespace RebecaBarrezueta_Examen1P.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+            ViewData["ZapatosID_RB"] = new SelectList(_context.ZapatosRB, "ZapatosID_RB", "Nombre_RB", promocionRB.ZapatosID_RB);
             return View(promocionRB);
         }
 
